@@ -1,5 +1,14 @@
 <!-- PHP Enviar Email -->
 <?php
+
+  use PHPMailer\PHPMailer;
+  use PHPMailer\Exception;
+  require "PHPMailer\Exception.php";
+  require "PHPMAILER\PHPMailer.php";
+  require "PHPMailer\SMTP.php";
+
+  require "autoload.php";
+
 if(!isset($_POST['submit']))
 {
   echo "Erro! Tem de submeter o formulário";
@@ -20,14 +29,22 @@ if(IsInjected($emailFonte))
     exit;
 }
 
-$emailDestino = "davidjma1999@gmail.com";
-$assunto = "E-mail website: \t $nome";
-
-$cabecalho = "Content-type: text/html;\r\n";
-$cabecalho .= "De: $email";
-
-mail($emailDestino,$assunto,$mensagem,$cabecalho);
-header('index.html');
+$mail = new PHPMailer(TRUE);
+try{
+  $mail->setFrom($emailFonte, $nome);
+  $mail->addAddress("davidjma1999@gmail.com", "David Abreu");
+  $mail->Subject = "Contacto Website";
+  $mail->Body = $mensagem;
+  $mail->send();
+}
+catch(Exception $e)
+{
+  echo $e->errorMessage();  
+}
+catch(\Exception $e)
+{
+  echo $e->errorMessage();  
+}
 
 function IsInjected($str)
 {
