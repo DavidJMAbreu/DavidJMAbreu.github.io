@@ -8,7 +8,6 @@ if(!isset($_POST['submit']))
   echo "Erro! Tem de submeter o formulário";
 }
 
-$result="";
 $nome = $_POST['nome'];
 $emailFonte = $_POST['email'];
 $mensagem = $_POST['mensagem'];
@@ -24,36 +23,19 @@ if(IsInjected($emailFonte))
     exit;
 }
 
-$mail = new PHPMailer(true);
-$mail->Host='smtp.gmail.com';
-$mail->Port=587;
-$mail->SMTPAuth=true;
-$mail->SMTPSecure='ssl';
-$mail->Username='davidjma1999@gmail.com';
-$mail->Password='73255237';
 
-$mail->setFrom(email, nome);
-$mail->addAddress('davidjma1999@gmail.com');
-$mail->addReplyto(email, nome);
-$mail->isHTML(true);
-$mail->Subject='Mensagem do website';
-$mail->Body='<h1> Name:'.nome.'<br>Email:'.email.'<br>Message: '. mensagem.'</h1>';
+$emailFrom = ;
+$emailSubject = "Email Assunto";
+$emailCorpo = "Nome : $nome.\n E-mail: $emailFonte\n\n$mensagem";
 
-if(!$mail->send()){
-  $result="O e-mail não pode ser enviado!";
-}else{
-  $result="O e-mail foi enviado com sucesso";
-}
+$para = "davidjma1999@gmail.com";
+$cabecalho = "De: $emailFrom\r\n";
+$cabecalho .= "Responder a: $emailFonte\r\n";
 
-}
-catch(Exception $e)
-{
-  echo $e->errorMessage();  
-}
-catch(\Exception $e)
-{
-  echo $e->errorMessage();  
-}
+mail($para,$emailSubject,$emailCorp,$emailCabecalho);
+header("Location: index.html");
+
+
 
 function IsInjected($str)
 {
