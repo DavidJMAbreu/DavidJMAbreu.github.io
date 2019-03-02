@@ -1,19 +1,14 @@
 <!-- PHP Enviar Email -->
 <?php
 
-  use PHPMailer\PHPMailer;
-  use PHPMailer\Exception;
-  require "PHPMailer\Exception.php";
-  require "PHPMAILER\PHPMailer.php";
-  require "PHPMailer\SMTP.php";
-
-  require "autoload.php";
+  require 'PHPMailerAutoload.php';
 
 if(!isset($_POST['submit']))
 {
   echo "Erro! Tem de submeter o formulário";
 }
 
+$result="";
 $nome = $_POST['nome'];
 $emailFonte = $_POST['email'];
 $mensagem = $_POST['mensagem'];
@@ -29,13 +24,27 @@ if(IsInjected($emailFonte))
     exit;
 }
 
-$mail = new PHPMailer(TRUE);
-try{
-  $mail->setFrom($emailFonte, $nome);
-  $mail->addAddress("davidjma1999@gmail.com", "David Abreu");
-  $mail->Subject = "Contacto Website";
-  $mail->Body = $mensagem;
-  $mail->send();
+$mail = new PHPMailer;
+$mail->Host='smtp.gmail.com';
+$mail->Port=587;
+$mail->SMTPAuth=true;
+$mail->SMTPSecure='tls';
+$mail->Username='davidjma1999@gmail.com';
+$mail->Password='73255237';
+
+$mail->setFrom(email, nome);
+$mail->addAddress('davidjma1999@gmail.com');
+$mail->addReplyto(email, nome);
+$mail->isHTML(true);
+$mail->Subject='Mensagem do website';
+$mail->Body='<h1> Name:'.nome.'<br>Email:'.email.'<br>Message: '. mensagem.'</h1>';
+
+if(!$mail->send()){
+  $result="O e-mail não pode ser enviado!";
+}else{
+  $result="O e-mail foi enviado com sucesso";
+}
+
 }
 catch(Exception $e)
 {
