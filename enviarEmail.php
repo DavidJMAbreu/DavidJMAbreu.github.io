@@ -11,18 +11,6 @@ if(!isset($_POST['submit']))
 $nome = $_POST['nome'];
 $emailFonte = $_POST['email'];
 $mensagem = $_POST['mensagem'];
-if(empty($nome)||empty($emailFonte)) 
-{
-    echo "nome e e-mail são obrigatórios";
-    exit;
-}
-
-if(IsInjected($emailFonte))
-{
-    echo "E-mail inválido";
-    exit;
-}
-
 
 $emailFrom = ;
 $emailSubject = "Email Assunto";
