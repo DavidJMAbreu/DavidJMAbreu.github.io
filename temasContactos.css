@@ -26,3 +26,42 @@ body{
 	background: linear-gradient(to bottom, #928fce 10%, #4b3987 75%);
 	color: #FFFFFF;
 }
+
+#email{
+	width: 300px;
+	height: 25px;
+}
+
+#mensagem{
+		width: 500px;
+}
+
+.instagram{
+	background: linear-gradient(to bottom, #984673 40%, #EDC7B4 120%);
+	color: #000000;
+}
+
+.instagram:hover{
+	background: linear-gradient(to bottom, #984673 25%, #EDC7B4 100%);
+	box-shadow: 0 0 1em black;
+}
+
+.facebook{
+	background: linear-gradient(to bottom, #3a5998 40%, #dfe3ee 150%);
+	color: #000000;
+}
+
+.facebook:hover{
+	background: linear-gradient(to bottom, #3a5998 25%, #dfe3ee 120%);
+	box-shadow: 0 0 1em black;
+}
+
+.linkedin{
+	background: linear-gradient(to bottom, #708d94 40%, #dce7ea 150%);
+	color: #000000;
+}
+
+.linkedin:hover{
+	background: linear-gradient(to bottom, #708d94 25%, #dce7ea 120%);
+	box-shadow: 0 0 1em black;
+}
