@@ -2,7 +2,7 @@
 <?php
 if(!isset($_POST['submit']))
 {
-	echo "Erro! Tem de submeter o formulário";
+  echo "Erro! Tem de submeter o formulário";
 }
 
 $nome = $_POST['nome'];
