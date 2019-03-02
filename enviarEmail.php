@@ -20,15 +20,13 @@ if(IsInjected($emailFonte))
     exit;
 }
 
-$origemEmail = 'davidjma1999@gmail.com';//<== update the email address
-$assuntoEmail = "Contacto Email por página";
-$corpoEmail = "Tem um email de:\t $nome.\n".
-    "\n\n\n $mensagem".
-    
-$destino = "davidjma1999@gmail.com";//<== update the email address
-$cabecalho = "De: $origemEmail \r\n";
-$cabecalho .= "Responder_A: $emailFonte \r\n";
-mail($destino,$assuntoEmail,$corpoEmail,$cabecalho);
+$emailDestino = "davidjma1999@gmail.com";
+$assunto = "E-mail website: \t $nome";
+
+$cabecalho = "Content-type: text/html;\r\n";
+$cabecalho .= "De: $email";
+
+mail($emailDestino,$assunto,$mensagem,$cabecalho);
 header('index.html');
 
 function IsInjected($str)
