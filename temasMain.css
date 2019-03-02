@@ -1,0 +1,50 @@
+
+
+/*Fontes*/
+@font-face{
+	font-family: "GoSpeed"
+	src: url(GoSpeed.ttf);
+}
+
+
+
+body{
+	background: linear-gradient(to right, #36204E 40%, #984673 110%)
+}
+
+#barraNavegacao{
+	background-color: #F8F7F4
+}
+
+#marcaNavegacao{
+	font-size: 35px;
+}
+
+#CV{
+	line-height: 0.2;
+}
+
+.carta{
+	height: 650px;
+}
+
+#Kicad{
+	padding-top: 80px;
+}
+
+#Java{
+	padding-top: 60px;
+}
+
+#C{
+	margin-top: 0px;
+}
+
+#ISE{
+	margin-top: 88px;
+}
+
+#matlab{
+	margin-top: 90px;
+	margin-bottom: 67px;
+}

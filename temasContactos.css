@@ -1,0 +1,28 @@
+/*Fontes*/
+@font-face{
+	font-family: "GoSpeed"
+	src: url(GoSpeed.ttf);
+}
+
+
+
+body{
+	background: linear-gradient(to right, #36204E 40%, #984673 110%)
+}
+
+#barraNavegacao{
+	background-color: #F8F7F4
+}
+
+#marcaNavegacao{
+	font-size: 35px;
+}
+
+#CV{
+	line-height: 0.2;
+}
+
+#Contactos{
+	background: linear-gradient(to bottom, #928fce 10%, #4b3987 75%);
+	color: #FFFFFF;
+}
