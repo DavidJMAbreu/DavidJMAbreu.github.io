@@ -24,11 +24,11 @@ if(IsInjected($emailFonte))
     exit;
 }
 
-$mail = new PHPMailer;
+$mail = new PHPMailer(true);
 $mail->Host='smtp.gmail.com';
 $mail->Port=587;
 $mail->SMTPAuth=true;
-$mail->SMTPSecure='tls';
+$mail->SMTPSecure='ssl';
 $mail->Username='davidjma1999@gmail.com';
 $mail->Password='73255237';
 
