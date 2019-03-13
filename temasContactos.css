@@ -36,26 +36,6 @@ body{
 		width: 500px;
 }
 
-.instagram{
-	background: linear-gradient(to bottom, #984673 40%, #EDC7B4 120%);
-	color: #000000;
-}
-
-.instagram:hover{
-	background: linear-gradient(to bottom, #984673 25%, #EDC7B4 100%);
-	box-shadow: 0 0 1em grey;
-}
-
-.facebook{
-	background: linear-gradient(to bottom, #3a5998 40%, #dfe3ee 150%);
-	color: #000000;
-}
-
-.facebook:hover{
-	background: linear-gradient(to bottom, #3a5998 25%, #dfe3ee 120%);
-	box-shadow: 0 0 1em grey;
-}
-
 .linkedin{
 	background: linear-gradient(to bottom, #708d94 40%, #dce7ea 150%);
 	color: #000000;
