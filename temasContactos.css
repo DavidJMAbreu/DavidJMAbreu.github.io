@@ -43,7 +43,7 @@ body{
 
 .instagram:hover{
 	background: linear-gradient(to bottom, #984673 25%, #EDC7B4 100%);
-	box-shadow: 0 0 1em black;
+	box-shadow: 0 0 1em grey;
 }
 
 .facebook{
@@ -53,7 +53,7 @@ body{
 
 .facebook:hover{
 	background: linear-gradient(to bottom, #3a5998 25%, #dfe3ee 120%);
-	box-shadow: 0 0 1em black;
+	box-shadow: 0 0 1em grey;
 }
 
 .linkedin{
@@ -63,5 +63,5 @@ body{
 
 .linkedin:hover{
 	background: linear-gradient(to bottom, #708d94 25%, #dce7ea 120%);
-	box-shadow: 0 0 1em black;
+	box-shadow: 0 0 1em grey;
 }

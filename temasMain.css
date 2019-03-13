@@ -48,3 +48,7 @@ body{
 	margin-top: 90px;
 	margin-bottom: 67px;
 }
+
+#botaoCarta:hover{
+	box-shadow: 0 0 1em grey;
+}
