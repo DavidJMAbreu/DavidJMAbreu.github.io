@@ -37,11 +37,11 @@ body{
 }
 
 .linkedin{
-	background: linear-gradient(to bottom, #708d94 40%, #dce7ea 150%);
+	background: linear-gradient(to bottom, #3a5998 25%, #dfe3ee 120%);
 	color: #000000;
 }
 
 .linkedin:hover{
-	background: linear-gradient(to bottom, #708d94 25%, #dce7ea 120%);
+	background: linear-gradient(to bottom, #3a5998 25%, #dfe3ee 120%);
 	box-shadow: 0 0 1em grey;
 }
