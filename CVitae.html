@@ -77,7 +77,33 @@
 					<p style="line-height: 1.0"><strong>Curriculo:</strong></p>
 					<a href="" type="button" data-toggle="modal" data-toggle="tooltip" title="Clique para ver o Curriculo" data-placement="top" data-target="#CV_OR_BCK" style="margin-top: 15px;"><img class="" src="CV_Or_Image.png" id="CV_OR_IMG"></a>
 
-					<div class="modal fade text-center modal-fullscreen" id="CV_OR_BCK">
+					
+				</div>
+				<!-- Carta Normal -->
+
+				<!-- Espaço para enquadrar as cartas -->
+				<div class="col-xl-2 col-lg-2 col-md-2 col-12">
+					<br>
+				</div>
+				<!-- Espaço para enquadrar as cartas -->
+
+				<!-- carta Europass -->
+				<div class="col-xl-2 col-lg-2 col-md-2 col-12">
+					<p style="line-height: 1.0;"><strong>Curriculo:</strong><br><small>Europass</small></p>
+					<a href="" type="button" data-toggle="modal" data-toggle="tooltip" title="Clique para ver o Curriculo" data-placement="top" data-target="#CV_EP_BCK"><img class="" src="CV_EP_Image.png" id="CV_EP_IMG"></a>
+
+					
+				</div>
+				<!-- carta Europass -->
+
+				<!-- Espaço para enquadrar as cartas -->
+				<div class="col-xl-3 col-lg-3 col-md-3 col-12">
+					
+				</div>
+				<!-- Espaço para enquadrar as cartas -->
+
+
+				<div class="modal fade text-center modal-fullscreen d-block d-sm-none" id="CV_OR_BCK">
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 					<div class="modal-content">
 						
@@ -94,22 +120,29 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="modal fade text-center modal-fullscreen d-none d-sm-block" id="CV_OR_BCK">
+				<div class="">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<h4 class="modal-title text-center">Curriculo</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body" style="overflow: hidden;">
+							<p style="line-height: 1.0; margin-top: -10px; font-size: 15px;">Ficheiro (PDF) :<br><a href="Curriculum_Vitae.pdf">Curriculum Vitae</a></p>
+							<iframe src="Curriculum_Vitae.pdf" id="CV_OR"></iframe><br>
+						</div>
+
+					</div>
 				</div>
-				<!-- Carta Normal -->
+			</div>
 
-				<!-- Espaço para enquadrar as cartas -->
-				<div class="col-xl-2 col-lg-2 col-md-2 col-12">
-					<br>
-				</div>
-				<!-- Espaço para enquadrar as cartas -->
 
-				<!-- carta Europass -->
-				<div class="col-xl-2 col-lg-2 col-md-2 col-12">
-					<p style="line-height: 1.0;"><strong>Curriculo:</strong><br><small>Europass</small></p>
-					<a href="" type="button" data-toggle="modal" data-toggle="tooltip" title="Clique para ver o Curriculo" data-placement="top" data-target="#CV_EP_BCK"><img class="" src="CV_EP_Image.png" id="CV_EP_IMG"></a>
 
-					<div class="modal fade text-center modal-fullscreen" id="CV_EP_BCK" style="vertical-align: right">
-				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+				<div class="modal fade text-center modal-fullscreen d-block d-sm-none" id="CV_EP_BCK" style="vertical-align: right">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 					<div class="modal-content">
 						
 						<div class="modal-header">
@@ -125,14 +158,24 @@
 					</div>
 				</div>
 			</div>
-				</div>
-				<!-- carta Europass -->
 
-				<!-- Espaço para enquadrar as cartas -->
-				<div class="col-xl-3 col-lg-3 col-md-3 col-12">
-					
+			<div class="modal fade text-center modal-fullscreen d-none d-sm-block" id="CV_EP_BCK" style="vertical-align: right">
+				<div class="">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<h4 class="modal-title text-center">Curriculo</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body" style="overflow-x: hidden;">
+							<p style="line-height: 1.0">Ficheiro (PDF) :<br><a href="Curriculum-Europass.pdf">Curriculum Vitae</a></p>
+							<iframe src="Curriculum-Europass.pdf" id="CV_EP"></iframe><br>
+						</div>
+
+					</div>
 				</div>
-				<!-- Espaço para enquadrar as cartas -->
+			</div>
 
 			</div>
 		</div>			
