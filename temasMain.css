@@ -12,6 +12,11 @@ body{
 	background: linear-gradient(to right, #36204E 40%, #984673 110%)
 }
 
+#Profile{
+	height: 175px;
+	width: 175px;
+}
+
 #barraNavegacao{
 	background-color: #F8F7F4
 }
@@ -51,4 +56,22 @@ body{
 
 #botaoCarta:hover{
 	box-shadow: 0 0 1em grey;
+}
+
+#botaoVoltar{
+	display: none; /*Esconder predefinição*/
+	position: fixed; /*Posição fixa*/
+	bottom: 20px; 
+	right: 30px;
+	z-index: 99; /*Certificar no-overlap*/
+	border: none;
+	outline: none;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+#botaovoltar:hover{
+	background: grey;
 }
