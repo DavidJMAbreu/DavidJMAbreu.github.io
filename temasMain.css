@@ -57,7 +57,7 @@ body{
 	display: none; /*Esconder predefinição*/
 	position: fixed; /*Posição fixa*/
 	bottom: 20px; 
-	right: 30px;
+	right: 5px;
 	z-index: 99; /*Certificar no-overlap*/
 	border: none;
 	outline: none;
