@@ -28,6 +28,7 @@ body{
 	zoom: 62%;
 	-moz-transform: scale(0.62);
 	-moz-transform-origin: left top;
+	-moz-overflow: yes;
 	height: 900px;
 	width: 600px;
 	margin-top: -10px;
