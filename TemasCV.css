@@ -27,12 +27,18 @@ body{
 #CV_OR{
 	zoom: 62%;
 	-moz-transform: scale(0.62);
-	-moz-transform-origin: left top;
-	align-items: center;
-	justify-content: center;
+	-moz-transform-origin: 22% top;
 	height: 900px;
 	width: 600px;
 	margin-top: -10px;
+
+	animation: rollOut.5;
+}
+
+#CV_OR_Moz{
+	text-align: center;
+	align-content: center;
+	justify-content: center;
 }
 
 #CV_OR_IMG{
