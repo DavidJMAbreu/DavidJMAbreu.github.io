@@ -25,7 +25,11 @@ body{
 }
 
 #CV_OR{
+	zoom: 62%;
+	-moz-transform: scale(0.8);
+	-moz-transform-origin: left top;
 	height: 900px;
+	width: 600px;
 	margin-top: -10px;
 }
 
