@@ -70,3 +70,26 @@ body{
 #botaovoltar:hover{
 	background: grey;
 }
+
+#voltaInicio{
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#voltaInicio:hover{
+	cursor: pointer;;
+	background: #333;
+}
+
+#voltaInicio.show{
+	opacity: 1;
+	visibility: visible;;
+}
