@@ -53,3 +53,11 @@ body{
 	box-shadow: 0 0 1em grey;
 }
 
+#hr1{
+	border:none;
+	height: 2px;
+	width: 400px;
+	background-color: black;
+	margin-bottom: 3px;
+}
+
